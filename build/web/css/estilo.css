@@ -1,0 +1,106 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+div.container {
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.tela-login {
+    padding-top: 150px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+h2.titulo { 
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: darkslategray;
+    margin-bottom: 20px;
+}
+
+h2.mensagem-destaque {
+    font-size: 1.2em;
+    color: darkslategray;
+    margin-bottom: 20px;
+}
+
+p.paragrafo {
+    color: darkslategray;
+}
+
+input, button[type=submit] { 
+    border-radius: 3px;
+    border: 1px solid #696969;
+    height: 50px;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 0 0 0 15px;
+}
+
+input:not([type=button]):focus ~ label, input:not([type=button]):valid ~label {
+    top: -9px;
+    left: 15px;
+    font-size: 11px;
+    background: white;
+    padding: 0 5px
+}
+
+input:not([type=button]):focus {
+    outline: none;
+    border: 1px solid #2e2e2e;
+}
+
+input:last-child { margin-bottom: 0; }
+
+button[type=submit] {
+    padding: 0;
+    outline: none;
+    background: #adadad;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+button[type=submit]:hover {
+    outline: none;
+    background: #939393; 
+    transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+div.group-input { 
+    position: relative;
+}
+
+label {
+    position: absolute;
+    color: darkslategray;
+    top: 13px;
+    left: 20px;
+    transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+div.tela-inicio {
+    margin-top: 20px
+}
